@@ -18,7 +18,7 @@ def mergeOverlappingIntervals(intervals):
 	# go through each interval and update the curr interval to merge if there is something to merge, otherwise just add it
 	for nextInterval in sortedIntervals:
 		_, currentIntervalEnd = currentInterval # same as currentIntervalEnd = currentInterval[1]
-		nextIntervalStart, nextIntervalEnd = sortedIntervals  # same as nextIntervalStart, .. = s...[0], s..[1]
+		nextIntervalStart, nextIntervalEnd = nextInterval  # same as nextIntervalStart, .. = s...[0], s..[1]
 	
 		# update the current interval as needed and the loop will be restarted again
 		if currentIntervalEnd >= nextIntervalStart:
