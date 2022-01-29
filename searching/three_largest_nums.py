@@ -47,3 +47,5 @@ def shiftAndUpdate(array, num, idx): # inputs: array, num to insert, index we wa
 		else: # assign that number to the next index, this will also rotate an array by as much as needed
 			array[i] = array[i + 1] 
 # EX: [x, y, z] and z is the num to update idx 2 (z) by -> [y, z, num] 
+# EX: for index 1 (the middle index): it will go do i = 0 and 1, so it will first assign i'th val in the array
+#to the old/current middle value, and then update the new middle value, then it's finished. 
